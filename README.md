@@ -8,7 +8,7 @@ First you will need:
 - a Google sheet formatted as shown in *example_sheet.png*
 - your own Telegram Bot with a unique token ([tutorial](https://core.telegram.org/bots#3-how-do-i-create-a-bot))
 
-The [python-telegram-bot library](https://github.com/python-telegram-bot/python-telegram-bot) makes it super easy to get started with your own bot. Their page shows you how to install the necessary package and even includes a bunch of examples that you can learn from and gain a deeper understanding of how Telegram bots work. I personally used [conversationbot.py](https://github.com/python-telegram-bot/python-telegram-bot/blob/master/examples/conversationbot.py) as a model. **Please note that I stored my bot's API token under the API_KEY variable in constants.py, so you should replace that with your own token.**
+The [python-telegram-bot library](https://github.com/python-telegram-bot/python-telegram-bot) makes it super easy to get started with your own bot. Their page shows you how to install the necessary package and even includes a bunch of examples that you can learn from and gain a deeper understanding of how Telegram bots work. I personally used [conversationbot.py](https://github.com/python-telegram-bot/python-telegram-bot/blob/master/examples/conversationbot.py) as a model. **Please note that I stored my bot's API token under the *API_KEY* variable in constants.py, so you should replace that with your own token.**
 
 This [Python tutorial (Your own Bookkeeping Telegram Bot)](https://chatbotslife.com/your-own-bookkeeping-telegram-bot-with-python-561507fc6a02) helped a lot in getting started with the Google Cloud Platform. It has a link to a step-by-step Youtube [tutorial from Tech With Tim](https://www.youtube.com/watch?v=cnPlKLEGR7E) that explains the process perfectly. **Note: You should replace creds.json with your own credentials.**
 
@@ -29,7 +29,7 @@ When each command is called, it starts a "conversation" that first asks the user
 **Note: The bot assumes that the company only owns four vehicles, but that's probably not the case. Therefore, you should edit the inline keyboard AND the Google sheet to include the number of vehicles they actually own. You could also ask to see what system they use to keep track of their vehicles (maybe they go by license plate/driver/etc).**
 
 # Switching Between Languages
-Since the company is based in Recife, Brazil they'll want the bot to speak to them in Portugese. To tackle this issue, I created separate string variables in constants.py to represent what the bot is saying to the user. These variables are used as parameters when update.message.reply_text() is called and correspond to the specific command/step used in conversation.
+Since the company is based in Recife, Brazil they'll want the bot to speak to them in Portugese. To tackle this issue, I created separate string variables in **constants.py** to represent what the bot is saying to the user. These variables are used as parameters when *update.message.reply_text()* is called and correspond to the specific command/step used in conversation.
 
 To switch between English and Portugese, simply comment out the block labeled "english version" or "portugese version" and uncomment the block with your preferred language. There are probably better ways to do this, so feel free to change it.
 
