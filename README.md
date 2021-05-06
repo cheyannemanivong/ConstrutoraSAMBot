@@ -1,6 +1,3 @@
-# ConstrutoraSAMBot
-Quick tutorial on how to use this Telegram Bot to update your Google Sheet
-
 # Project Scope
 Construtora SAM's main method of communication is through a Telegram groupchat. At the beginning and end of each shift, workers send various photos of their trucks that show things like license plate number, mileage, equipment, and problems that they might run into. Additionally, when the truck needs to be refueled, they must follow a certain procedure that involves taking photos of the mileage, the amount of gas in the tank, the cost of refueling, as well as the gas station attendant. This process leads to an inconsistent amount of photos sent to the group chat every week and can create a lot of clutter.
 
